@@ -1,4 +1,4 @@
-Discord bot using python
+Discord bot using python with flask
 
 To use this code:
 - create a bot application on the discord website 
