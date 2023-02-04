@@ -1,5 +1,4 @@
 import discord
-import random
 
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
