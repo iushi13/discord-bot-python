@@ -1,4 +1,10 @@
+import os
 import discord
+import asyncio
+from discord.ext import commands
+import webserver
+from webserver import keep_alive
+import os
 
 intents = discord.Intents().all()
 client = discord.Client(intents=intents)
@@ -46,5 +52,6 @@ together to produce our subjective emotional experiences. Understanding the unde
 continues to be an active area of research in psychology, neuroscience, and biology.""")
         elif user_message.lower() == "pizza":
             await message.channel.send(f'PAUSEEEE, PLZ WAIT 4 HOURS, PIZZA 4 FORMAGGI WITH CHAMPIGNONES')
-TOKEN = 'ENTER YOUR TOKEN'
+keep_alive()
+TOKEN = os.environ.get("DISCORD_BOT_SECRET") #DISCORD_BOT_SECRET is the .env value of the token
 client.run(TOKEN)
