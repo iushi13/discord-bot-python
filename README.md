@@ -1,3 +1,6 @@
 Discord bot using python
 
-To use this bot you need to create the bot on the discord webpage and generate an link to join server and a token.
+To use this code:
+- create a bot application on the discord website 
+- generate a link in order to join a server 
+- generate a token
